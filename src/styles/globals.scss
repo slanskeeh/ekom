@@ -1,0 +1,58 @@
+@use "./base/variables" as *;
+@use "./base/typography" as *;
+@use "./base/mixins" as *;
+
+// reset и глобальные стили
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font-inter);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+
+  font-style: normal;
+  font-weight: normal;
+  font-size: 10px;
+
+  text-rendering: auto;
+
+  white-space: pre-wrap;
+}
+
+main {
+  padding: 0 32px;
+}
+
+body {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+
+  min-width: 32rem;
+  min-height: 100vh;
+  overflow-x: hidden;
+
+  color: var(--color-text);
+
+  font-size: 16px;
+
+  /*Перенос длинных слов*/
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+
+  @media screen and (max-width: 430px) {
+    font-size: 14px;
+  }
+}

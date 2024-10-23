@@ -1,0 +1,43 @@
+@use "@/styles/base/variables.scss" as *;
+
+.common {
+  color: #fff;
+  background-color: $color-main;
+
+  text-decoration: none;
+
+  border-radius: 8px;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button {
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 600;
+  font-family: var(--font-inter);
+
+  padding: 8px 13px;
+
+  width: fit-content;
+}
+
+.link {
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 500;
+  font-family: var(--font-roboto);
+
+  padding: 14px;
+
+  &[data-width="medium"] {
+    width: 180px;
+  }
+  &[data-disabled="true"] {
+    cursor: not-allowed;
+    pointer-events: none;
+  }
+}

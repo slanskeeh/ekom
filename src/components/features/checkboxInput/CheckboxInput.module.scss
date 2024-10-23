@@ -1,0 +1,23 @@
+@use "@/styles/base/variables.scss" as *;
+
+.container {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.label {
+  font-family: var(--font-roboto);
+  font-size: 16px;
+  line-height: 24px;
+
+  font-weight: 400;
+}
+
+.input {
+  width: 13px;
+  height: 13px;
+
+  border: 1px solid #767676;
+  border-radius: 2.5px;
+}

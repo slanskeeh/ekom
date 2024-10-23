@@ -1,0 +1,46 @@
+@use "@/styles/base/variables.scss" as *;
+
+.calc {
+  height: 707px;
+  width: 438px;
+  background-color: #f1f2f3;
+  border-radius: 6px;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 16px;
+  padding: 0 20px;
+}
+
+.results {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 16px;
+  margin-top: 42px;
+
+  height: 160px;
+
+  &_previous {
+    height: 47px;
+    font-size: 40px;
+    font-weight: 300;
+    font-family: var(--font-work);
+    line-height: 1;
+    color: rgba(0, 0, 0, 0.4);
+  }
+  &_current {
+    font-size: 96px;
+    line-height: 1;
+    font-weight: 300;
+    font-family: var(--font-work);
+    color: #000;
+  }
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
